@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap");
+
+body {
+  /* background: rgba(229, 229, 229, 0.4); */
+  background-color: #28a745;
+}
+
+/* @font-face {
+  font-family: gotham-book;
+  src: url("../../fonts/gotham-rounded/GothamRounded-Book.otf");
+} */
+
+h4 {
+  font-size: 16px !important;
+  color: #a0a0a0;
+}
+
+.image-profile img {
+  z-index: 99;
+  max-width: 170px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.nama-profil {
+  font-size: 16pt;
+  color: #474747;
+  text-align: center;
+}
+
+.hr-profile {
+  width: 20%;
+  border-radius: 50px;
+  background: #28a745;
+  height: 2px;
+}
+
+.edit-profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.content-profile {
+  margin: 20px;
+}
+
+.container-profile {
+  margin-top: 44px;
+}
+
+.card-profile {
+  position: relative;
+  margin-top: 120px;
+  border-radius: 2em;
+  width: 100%;
+  min-height: 20px;
+  background: white;
+  padding: 120px 20px 20px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-ticket {
+  margin-bottom: 120px;
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+  min-height: 20px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-transaksi {
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 20px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.col-md-6 p {
+  background-color: #e5e5e5;
+  border-radius: 2em;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-family: nunito;
+}
+
+.content-profile input,
+select {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.content-profile input,
+select > p {
+  background-color: none !important;
+}
+
+.btn-primary {
+  color: #fff;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  background-color: #28a745;
+  border-color: #28a745;
+}
