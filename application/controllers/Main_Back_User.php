@@ -21,14 +21,23 @@ class Main_Back_User extends CI_Controller {
 	    $data['username'] = $this->session->userdata('username');
 	    $data['email'] = $this->session->userdata('email');
 	    $data['fullname'] = strtoupper($this->session->userdata('fullname'));
+		$jumlahkos = $this->User_model->getJumlahKos()->num_rows();
+	    $jumlahuser = $this->User_model->getJumlahUser()->num_rows();
+	    $jumlahsewa = $this->User_model->getJumlahSewa()->num_rows();
+	    $jumlahrequest = $this->User_model->getJumlahRequest()->num_rows();
 
-
+		$data2 = array(
+	    	'jumlahkos' => $jumlahkos,
+	    	'jumlahuser' => $jumlahuser,
+	    	'jumlahsewa' => $jumlahsewa,
+	    	'jumlahrequest' => $jumlahrequest
+	    );
 
 	    if (!$sudah_login) { // jika $sudah_login == false atau belum login maka akan kembali ke redirect yang di tuju
 	      redirect(base_url('Login'));
 	    }else { 
 			$this->load->view('navbar_user');
-	      $this->load->view('user/header_user',$data);
+	      $this->load->view('user/header_user',$data2);
 	      $this->load->view('footer');
 	    //   $this->load->view('index');
 	    }

@@ -10,13 +10,24 @@ class Main_Front_User extends CI_Controller {
 	}
 
 	public function index(){
-		  $data['sql'] = $this->User_model->info_semua_kos();
+		$data['sql'] = $this->User_model->info_semua_kos();
+		$jumlahkos = $this->User_model->getJumlahKos()->num_rows();
+		$jumlahuser = $this->User_model->getJumlahUser()->num_rows();
+		$jumlahsewa = $this->User_model->getJumlahSewa()->num_rows();
+		$jumlahrequest = $this->User_model->getJumlahRequest()->num_rows();
 
-		    $this->load->view('navbar');
-			$this->load->view('user/header',$data);
-		    $this->load->view('footer');
-			// $this->load->view('user/index',$data);
-	}
+		$data2 = array(
+			'jumlahkos' => $jumlahkos,
+			'jumlahuser' => $jumlahuser,
+			'jumlahsewa' => $jumlahsewa,
+			'jumlahrequest' => $jumlahrequest
+		);  
+
+		  $this->load->view('navbar');
+		  $this->load->view('user/header',$data2);
+		  $this->load->view('footer');
+		  // $this->load->view('user/index',$data);
+  }
 
 	public function semua_kos(){
 		$data['sql'] = $this->User_model->info_semua_kos();

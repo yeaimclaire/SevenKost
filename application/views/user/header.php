@@ -412,32 +412,32 @@
           <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
             <div class="block-18 py-5 mb-4">
               <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Area <br>Population</span>
+                <strong class="number"><?=$jumlahkos ?></strong>
+                <span>Kos <br>Terdaftar</span>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
             <div class="block-18 py-5 mb-4">
               <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="2500">0</strong>
-                <span>Total <br>Properties</span>
+                <strong class="number"><?=$jumlahuser ?></strong>
+                <span>User <br>Terdaftar</span>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
             <div class="block-18 py-5 mb-4">
               <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="500">0</strong>
-                <span>Average <br>House</span>
+                <strong class="number"><?=$jumlahsewa ?></strong>
+                <span>Sewa <br>Berlangsung</span>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
             <div class="block-18 py-5 mb-4">
               <div class="text d-flex align-items-center">
-                <strong class="number" data-number="67">0</strong>
-                <span>Total <br>Branches</span>
+                <strong class="number"><?=$jumlahrequest ?></strong>
+                <span>Request <br>Berlangsung</span>
               </div>
             </div>
           </div>
