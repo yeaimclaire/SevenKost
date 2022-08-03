@@ -665,7 +665,8 @@ class Main_Back_User extends CI_Controller {
 			'no_hp'				=>$data_kos[0]['no_hp'],
 			'fullname'				=>$data_kos[0]['fullname'],
 			'tipe'				=>$data_kos[0]['tipe'],
-			'image_header'		=>$data_kos[0]['image_header']
+			'image_header'		=>$data_kos[0]['image_header'],
+			'sisa_kamar'		=>$data_kos[0]['sisa_kamar'],
 		);
 
 		if (!$sudah_login) { // jika $sudah_login == false atau belum login maka akan kembali ke redirect yang di tuju

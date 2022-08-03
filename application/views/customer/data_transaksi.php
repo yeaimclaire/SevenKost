@@ -19,10 +19,10 @@
 <section class="content">
         <div class="container-fluid">
             <!-- Basic Examples -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" style="border-radius: 2em;">
-                        <div class="header">
+            <div class="container mt-2 mb-2 ">
+        <div class="card border-info mt-2">
+            <div class="card-body">
+            <div class="header">
                            <h3>   </h3> <h3>Cek Pembayaran</h3>
                         </div>
                         <div class="body"> 

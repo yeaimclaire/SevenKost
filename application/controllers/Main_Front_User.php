@@ -104,7 +104,8 @@ class Main_Front_User extends CI_Controller {
 			'fullname'			=>$data_kos[0]['fullname'],
 			'harga'				=>$data_kos[0]['harga'],
 			'tipe'				=>$data_kos[0]['tipe'],
-			'image_header'		=>$data_kos[0]['image_header']
+			'image_header'		=>$data_kos[0]['image_header'],
+			'sisa_kamar'		=>$data_kos[0]['sisa_kamar']
 		);
 
 			// $this->load->view('user/header',$data);
@@ -126,7 +127,7 @@ class Main_Front_User extends CI_Controller {
 
 	public function filter()
 	{
-		$kota=$this->input->get('kota');
+	$kota=$this->input->get('kota');
     $tipe=$this->input->get('tipe');
     $data['sql'] = $this->User_model->filter($kota,$tipe)->result_array();
 	$this->load->view('navbar',$data);

@@ -43,7 +43,7 @@
                         </div>
 
                         <button class="btn btn-info">Sewa</button>
-                        <a href="<?= base_url('user/index') ?>" class="btn btn-warning text-light"> Kembali</a>
+                        <a href="<?= base_url('Main_Back_User') ?>" class="btn btn-warning text-light"> Kembali</a>
 
                     </form>
 

@@ -139,7 +139,7 @@ class User_model extends CI_Model{
 	    $this->db->select('tbl_kos.*, tb_user.id_user');
 	    $this->db->from('tbl_kos');
 	    $this->db->join('tb_user', 'tbl_kos.id_user = tb_user.id_user');
-	    // $this->db->where('tbl_kos.status = "1","0"');
+	    $this->db->where('tbl_kos.status = "1"');
 	    $sql = $this->db->get()->result();
 	    return $sql;
   	}

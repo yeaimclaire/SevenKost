@@ -22,6 +22,19 @@
       				<div class="text">
                       <span class="subheading"><?=$kota ?></span>
                       <h2><b><?=$nama ?></b></h2>
+                      <button type="button" class="btn btn-outline-success btn-rounded" style="margin-right: 2em">Kos
+		        					<?php 
+                                        if($tipe == 'Campur'){
+                                            echo 'Campur';
+                                        }elseif($tipe == 'Putra'){
+                                            echo 'Putra';
+                                        }elseif($tipe == 'Putri'){
+                                          echo 'Putri';
+                                        }?>
+		        				</button> 
+                    <br><br>
+                    <span class="subheading"><img src="../../asset/images/maps.png" alt="" ><?=$alamat ?></span>  
+                    <br>       
 					  <h3 class="text-success"><b>Rp. <?=$this->cart->format_number($harga);?> /bulan</h3>
       				</div>
       			</div>
@@ -48,6 +61,7 @@
 						    		<div class="col-md-12">
 						    			<ul class="features">
 						    				<li class="check"><span class="fa fa-circle"></span>Kota : <?=$kota ?></li>
+						    				<li class="check"><span class="fa fa-circle"></span>Sisa Kamar : <?=$sisa_kamar ?></li>
 						    				<li class="check"><span class="fa fa-circle"></span>Alamat : <?=$alamat ?></li>
 						    				<li class="check"><span class="fa fa-circle"></span>Kategori : <?=$tipe ?></li>
 						    				<li class="check"><span class="fa fa-circle"></span>No Hp : <?=$no_hp ?></li>
