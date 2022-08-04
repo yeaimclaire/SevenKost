@@ -1,14 +1,8 @@
 ###################
-What is CodeIgniter
+SevenKos Website Project
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+SevenKos adalah website pencarian kos yang menggunakan framework Codeigniter dan bahasa pemrograman PHP. Dalam website ini terdapat 4 role yang mempunyai halaman masing masing, diantaranya terdapat superadmiin, admin, owner, dan juga customer. Website ini tentunya mempermudah para pencari kos dan juga pemilik kos, pencari kos akan dimudahkan dalam mencari kos sesuai dengan area, tipe, ataupun harga yang diinginkan, sementara pemilik kos dimudahkan dalamm mendapatkan penghuni kos nya dan juga menyebarluaskan kos nya untuk diketahui banyak orang. Dalam website ini customer tidak hanya bisa melihat info kost nya saja, namun mereka juga bisa melakukan sewa di dalam website ataupun di luar website (dengan langsung menghubungi pemilik kos).
 
 *******************
 Release Information
